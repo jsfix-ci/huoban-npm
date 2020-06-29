@@ -1,0 +1,28 @@
+{
+  "name": "huoban-npm",
+  "version": "1.0.0",
+  "description": "huoban-npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx babel src/ --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhaohangYang/huoban-npm.git"
+  },
+  "author": "ZhaohangYang<804142454@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhaohangYang/huoban-npm/issues"
+  },
+  "homepage": "https://github.com/ZhaohangYang/huoban-npm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "axios": "^0.19.2",
+    "js-cookie": "^2.2.1"
+  }
+}
