@@ -1,5 +1,5 @@
 examples/node_modules/
-examples/dist/
+examples/
 lib/
 node_modules/
 .npmignore

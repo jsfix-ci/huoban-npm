@@ -1,11 +1,13 @@
 {
   "name": "huoban-npm",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "huoban-npm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx babel src/ --out-dir lib"
+    "compile": "npx babel src/ --out-dir lib",
+    "build": "babel src -d lib",
+    "build:watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",

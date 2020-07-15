@@ -11,7 +11,7 @@ export default {
 			});
 		});
 	},
-	getFormatFields: function (args) {
+	getFormatFields: function (args,mode=0) {
 		let that = this;
 		return new Promise(function (resolve, reject) {
 			that.get(args).then((response) => {
@@ -20,7 +20,9 @@ export default {
 					let table = response.data;
 					let formatFields = {};
 					_.forIn(table['fields'], function (field, index) {
-						field['alias'] = field['alias'].replace(/\./g, '_');
+						if (mode) {
+							field['alias'] = field['alias'].replace(/\./g, '_');
+						}
 						formatFields[field['alias']] = field;
 					});
 					resolve(formatFields);
